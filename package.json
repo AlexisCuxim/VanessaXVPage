@@ -2,6 +2,7 @@
   "name": "page-xv",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://alexiscuxim.github.io/VanessaXVPage/dist",
   "type": "module",
   "scripts": {
     "dev": "vite",
