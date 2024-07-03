@@ -1,5 +1,10 @@
 import React from 'react';
 import Slider from 'react-slick';
+import photoFamily1 from '/images/photos-of-parents/family-1.jpeg'
+import photoFamily2 from '/images/photos-of-parents/family-2.jpeg'
+import photoFamily3 from '/images/photos-of-parents/family-3.jpeg'
+import photoFamily4 from '/images/photos-of-parents/family-4.jpeg'
+import photoFamily5 from '/images/photos-of-parents/family-5.jpeg'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -41,27 +46,27 @@ const Parents = () => {
               <Slider {...settings}>
                 <div>
                   <div className="w-full h-[15rem] md:h-[30rem]">
-                    <img className="w-full h-full object-cover rounded-[1rem]" src="/images/photos-of-parents/family-1.jpeg" alt="" />
+                    <img className="w-full h-full object-cover rounded-[1rem]" src={photoFamily1} alt="" />
                   </div>
                 </div>
                 <div>
                   <div className="w-full h-[15rem] md:h-[30rem]">
-                    <img className="w-full h-full object-cover rounded-[1rem]" src="/images/photos-of-parents/family-2.jpeg" alt="" />
+                    <img className="w-full h-full object-cover rounded-[1rem]" src={photoFamily2} alt="" />
                   </div>
                 </div>
                 <div>
                   <div className="w-full h-[15rem] md:h-[30rem]">
-                    <img className="w-full h-full object-cover rounded-[1rem]" src="/images/photos-of-parents/family-3.jpeg" alt="" />
+                    <img className="w-full h-full object-cover rounded-[1rem]" src={photoFamily3} alt="" />
                   </div>
                 </div>
                 <div>
                   <div className="w-full h-[15rem] md:h-[30rem]">
-                    <img className="w-full h-full object-cover rounded-[1rem]" src="/images/photos-of-parents/family-4.jpeg" alt="" />
+                    <img className="w-full h-full object-cover rounded-[1rem]" src={photoFamily4} alt="" />
                   </div>
                 </div>
                 <div>
                   <div className="w-full h-[15rem] md:h-[30rem]">
-                    <img className="w-full h-full object-cover rounded-[1rem]" src="/images/photos-of-parents/family-5.jpeg" alt="" />
+                    <img className="w-full h-full object-cover rounded-[1rem]" src={photoFamily5} alt="" />
                   </div>
                 </div>
               </Slider>
