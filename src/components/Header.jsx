@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <section className="w-full h-screen bg-cover bg-center relative bg-[linear-gradient(to_bottom,rgba(255,255,255,0),rgba(191,42,82,.5),rgba(191,42,82,1)),url(/images/mobile/header.jpeg)]
+    <section className="w-full h-svh bg-cover bg-center relative bg-[linear-gradient(to_bottom,rgba(255,255,255,0),rgba(191,42,82,.5),rgba(191,42,82,1)),url(/images/mobile/header.jpeg)]
       md:bg-[linear-gradient(to_left,rgba(255,255,255,0),rgba(191,42,82,.5),rgba(191,42,82,1)),url(/images/mobile/header.jpeg)]"
     >
       <div className="container absolute bottom-0 left-1/2 -translate-x-1/2
