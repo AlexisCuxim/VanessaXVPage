@@ -113,7 +113,6 @@ const Parents = () => {
               <Slider {...settingsGodparents}>
                 { photosGodparents.map((godparent, indexGodparent) => (
                   <div key={indexGodparent}>
-                    { console.log(godparent, indexGodparent) }
                     <div className="w-full h-[15rem] md:h-[25rem] lg:h-[20rem] px-2">
                       <img className="w-full h-full object-cover rounded-[1rem]" src={godparent} alt="" />
                     </div>
