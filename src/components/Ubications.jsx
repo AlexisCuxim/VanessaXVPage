@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import imageChurch from '/images/church-1.jpeg';
 import imageHall from '/images/salon-1.jpg';
@@ -6,13 +6,57 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 const Ubications = () => {
-	const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  };
+	const [settings, setSettings] = useState({});
+
+	useEffect(() => {
+		setSettings({
+			dots: true,
+			fade: true,
+			infinite: true,
+			speed: 500,
+			slidesToShow: 1,
+			slidesToScroll: 1
+		});
+
+		let map;
+		let mapHall;
+		async function initMap() {
+			const position = { lat: 21.180410, lng: -86.868056 };
+			const positionHall = { lat: 21.162787, lng: -86.887817 };
+			const { Map } = await google.maps.importLibrary("maps");
+			const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+		
+			// The map, centered at Uluru
+			map = new Map(document.getElementById("map"), {
+				zoom: 18,
+				center: position,
+				mapId: "DEMO_MAP_ID",
+			});
+		
+			// The marker, positioned at Uluru
+			const marker = new AdvancedMarkerElement({
+				map: map,
+				position: position,
+				title: "Uluru",
+			});
+	
+			// The map, centered at Uluru
+			mapHall = new Map(document.getElementById("mapHall"), {
+				zoom: 18,
+				center: positionHall,
+				mapId: "DEMO_MAP_ID",
+			});
+		
+			// The marker, positioned at Uluru
+			const markerHall = new AdvancedMarkerElement({
+				map: mapHall,
+				position: positionHall,
+				title: "Uluru",
+			});
+		}
+	
+		initMap();
+	}, [])
 
 	return (
 		<>		
@@ -20,7 +64,7 @@ const Ubications = () => {
 				<div className="container py-12">
 					<div className="mb-12">
 						<h2 className="font-rochester text-black text-center text-2xl mb-8 text-text md:text-[2.5rem]">Iglesia</h2>
-						<div className="lg:grid lg:grid-cols-2 lg:gap-8">
+						<div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:p-8">
 							<div className="lg:col-span-1">
 								<div className="w-16 h-16 bg-primary rounded-full flex justify-center items-center mx-auto
 									md:w-[6rem] md:h-[6rem]"
@@ -41,26 +85,30 @@ const Ubications = () => {
 									<i className="material-symbols-outlined text-xs">double_arrow</i>
 								</a>
 							</div>
-							<div className="hidden lg:block lg:col-span-1 lg:p-8">
-								<div className="bg-white h-full">
-									Maps
+							<div className="hidden lg:block lg:col-span-1">
+								<div className="h-full rounded-lg overflow-hidden">
+									<div className="max-w-[400px] h-full mx-auto" id="map"></div>
 								</div>
 							</div>
 						</div>
 						<div className="slider-container">
     				  <Slider {...settings}>
     				    <div>
-    				      <img src={imageChurch} alt="" />
+									<div className="w-full h-[15rem] md:h-[25rem] lg:h-[35rem] px-2">
+    				      	<img className="w-full h-full object-cover rounded-[1rem]" src={imageChurch} alt="" />
+                  </div>
     				    </div>
     				    <div>
-    				      <img src={imageChurch} alt="" />
+									<div className="w-full h-[15rem] md:h-[25rem] lg:h-[35rem] px-2">
+    				      	<img className="w-full h-full object-cover rounded-[1rem]" src={imageChurch} alt="" />
+                  </div>
     				    </div>
     				  </Slider>
     				</div>
 					</div>
 					<div className="mb-12">
 						<h2 className="font-rochester text-black text-center text-2xl mb-8 text-text md:text-[2.5rem]">Salón</h2>
-						<div className="lg:grid lg:grid-cols-2 lg:gap-8">
+						<div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:p-8">
 							<div className="lg:col-span-1">
 								<div className="w-16 h-16 bg-primary rounded-full flex justify-center items-center mx-auto
 									md:w-[6rem] md:h-[6rem]"
@@ -81,19 +129,18 @@ const Ubications = () => {
 									<i className="material-symbols-outlined text-xs">double_arrow</i>
 								</a>
 							</div>
-							<div className="hidden lg:block lg:col-span-1 lg:p-8">
-								<div className="bg-white h-full">
-									Maps
+							<div className="hidden lg:block lg:col-span-1">
+								<div className="h-full rounded-lg overflow-hidden">
+									<div className="max-w-[400px] h-full mx-auto" id="mapHall"></div>
 								</div>
 							</div>
 						</div>
 						<div className="slider-container">
     				  <Slider {...settings}>
     				    <div>
-    				      <img src={imageHall} alt="" />
-    				    </div>
-    				    <div>
-    				      <img src={imageHall} alt="" />
+									<div className="w-full h-[15rem] md:h-[25rem] lg:h-[35rem] px-2">
+    				      	<img className="w-full h-full object-cover rounded-[1rem]" src={imageHall} alt="" />
+                  </div>
     				    </div>
     				  </Slider>
     				</div>
