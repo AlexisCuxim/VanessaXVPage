@@ -22,7 +22,7 @@ const Header = () => {
         <source src={CreeYAtrevete} type="audio/mpeg"/>
       </audio>
       <span 
-        class="material-symbols-outlined text-white relative left-1/2 text-[3rem] top-8 cursor-pointer"
+        class="material-symbols-outlined text-white relative left-1/2 -translate-x-1/2 text-[3rem] top-8 cursor-pointer"
         onClick={handleAudioControl}
       >
         { isPlaying ? 'pause_circle' : 'play_circle' }
