@@ -1,7 +1,6 @@
 const DressCode = () => {
   return (
-    <section className="w-full bg-center bg-cover"
-      style={{ backgroundImage: "linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(/images/bg-dress-code.jpg)" }}>
+    <section className="w-full bg-center bg-cover bg-[linear-gradient(to_bottom,rgba(0,0,0,.5),rgba(0,0,0,.5),rgba(0,0,0,.5)),url(/images/bg-dress-code.jpg)]">
       <div className="container pt-6 pb-24">
         <div className="text-secondary text-center mb-6">
           <h3 className="font-rochester text-2xl">Código de vestimenta</h3>
