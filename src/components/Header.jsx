@@ -1,8 +1,32 @@
+import React, { useState, useRef } from 'react';
+import CreeYAtrevete from '/audio/Cree-y-atrevete-Ha-Ash.mp3';
+
 const Header = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const audioRef = useRef(null);
+
+  const handleAudioControl = () => {
+    if (isPlaying) {
+      audioRef.current.pause();
+    } else {
+      audioRef.current.play();
+    }
+    setIsPlaying(!isPlaying);
+  };
+
   return (
     <section className="w-full h-svh bg-cover bg-center relative bg-[linear-gradient(to_bottom,rgba(255,255,255,0),rgba(191,42,82,.5),rgba(191,42,82,1)),url(/images/mobile/header.jpeg)]
       md:bg-[linear-gradient(to_left,rgba(255,255,255,0),rgba(191,42,82,.5),rgba(191,42,82,1)),url(/images/mobile/header.jpeg)]"
     >
+      <audio className="hidden" ref={audioRef} controls loop>
+        <source src={CreeYAtrevete} type="audio/mpeg"/>
+      </audio>
+      <span 
+        class="material-symbols-outlined text-white relative left-1/2 text-[3rem] top-8 cursor-pointer"
+        onClick={handleAudioControl}
+      >
+        { isPlaying ? 'pause_circle' : 'play_circle' }
+      </span>
       <div className="container absolute bottom-0 left-1/2 -translate-x-1/2
         md:top-1/2 md:bottom-[unset] md:left-[unset] md:translate-x-[unset] md:-translate-y-1/2">
         <h1 className="font-rochester text-center text-white text-[2.5rem] leading-none mb-6
