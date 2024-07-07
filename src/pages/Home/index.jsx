@@ -32,7 +32,7 @@ const Home = () => {
         <a 
           className="block w-fullx px-4 py-[.8rem] font-poppins text-md text-center text-white font-normal uppercase bg-primary"
           style={{ boxShadow: '0px 6px 6px 0 rgb(0 0 0 / .3)' }}
-          href="https://wa.me/+529981278579?text=Confirmo mi asistencia"
+          href="https://wa.me/+529982156993?text=Confirmo%20mi%20asistencia"
         >
           Confirmar
           <i className="material-symbols-outlined ml-3 text-sm">arrow_outward</i>
