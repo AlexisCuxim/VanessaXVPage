@@ -6,6 +6,7 @@ import photoFamily3 from '/images/photos-of-parents/family-3.jpeg';
 import photoFamily4 from '/images/photos-of-parents/family-4.jpeg';
 import photoFamily5 from '/images/photos-of-parents/family-5.jpeg';
 import godparents1 from '/images/photos-of-parents/godparents-1.jpeg';
+import flowers from '/images/flowers.png';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -58,10 +59,15 @@ const Parents = () => {
   return (
     <>
       <section className="w-full bg-center bg-cover bg-fixed bg-[linear-gradient(rgba(0,106,106,1),rgba(0,106,106,.5),rgba(0,106,106,.5)),url(/images/bg-parents.jpeg)]">
-        <div className="container py-12">
+        <div className="container py-8 md:py-12">
           <div>
-            <h2 className="font-rochester text-[1.7rem] text-secondary text-center mb-8 md:text-[2.5rem]">Mis padres</h2>
-            <div className="flex justify-center flex-col gap-12 mb-12">
+            <div className="mb-8">
+              <h2 className="font-rochester text-[1.7rem] text-secondary text-center md:text-[2.5rem]">Mis padres</h2>
+              <div className="w-full h-[3rem]">
+                <img className="w-full h-full object-contain" src={flowers} alt="" />
+              </div>
+            </div>
+            <div className="flex justify-center flex-col gap-8 mb-12">
               <div className="font-poppins text-base text-secondary">
                 <h3 className="text-center uppercase [text-shadow:_1px_1px_1px_rgb(0_0_0_/_20%)] md:text-[1.3rem]">
                   Mamá
@@ -90,10 +96,15 @@ const Parents = () => {
             </div>
           </div>
         </div>
-        <div className="container py-12 lg:grid lg:grid-cols-2 lg:gap-8">
+        <div className="container py-8 md:py-12 lg:grid lg:grid-cols-2 lg:gap-8">
           <div className="lg:col-span-1 lg:self-center">
-            <h2 className="font-rochester text-[1.7rem] text-secondary text-center mb-8 md:text-[2.5rem]">Mis padrinos</h2>
-            <div className="flex justify-center flex-col gap-12 mb-12">
+            <div className="mb-8">
+              <h2 className="font-rochester text-[1.7rem] text-secondary text-center md:text-[2.5rem]">Mis padrinos</h2>
+              <div className="w-full h-[3rem]">
+                <img className="w-full h-full object-contain" src={flowers} alt="" />
+              </div>
+            </div>
+            <div className="flex justify-center flex-col gap-8 mb-12">
               <div className="font-poppins text-base text-secondary">
                 <h3 className="text-center uppercase [text-shadow:_1px_1px_1px_rgb(0_0_0_/_20%)] md:text-[1.3rem]">
                   Madrina

@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import CreeYAtrevete from '/audio/Cree-y-atrevete-Ha-Ash.mp3';
+import flowers from '/images/flowers.png';
 
 const Header = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -36,6 +37,9 @@ const Header = () => {
           <span className="block text-[#00BD37]">
             Sánchez Uitz
           </span>
+          <div className="w-full h-[3rem]">
+            <img className="w-full h-full object-contain" src={flowers} alt="" />
+          </div>
         </h1>
         <p className="font-poppins text-white text-center mb-6
           md:max-w-[20rem] md:text-left md:text-[1.1rem] md:leading-5 md:ml-4 md:mb-12

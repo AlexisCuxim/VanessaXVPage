@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import imageChurch from '/images/church-1.jpeg';
 import imageHall from '/images/salon-1.jpg';
+import flowers from '/images/flowers.png';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -63,7 +64,12 @@ const Ubications = () => {
 			<section className="bg-secondary">
 				<div className="container py-12">
 					<div className="mb-12">
-						<h2 className="font-rochester text-black text-center text-2xl mb-8 text-text md:text-[2.5rem]">Iglesia</h2>
+						<div className="mb-8">
+							<h2 className="font-rochester text-black text-center text-[1.7rem] text-text md:text-[2.5rem]">Iglesia</h2>
+							<div className="w-full h-[3rem]">
+								<img className="w-full h-full object-contain" src={flowers} alt="" />
+							</div>
+						</div>
 						<div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:p-8">
 							<div className="lg:col-span-1">
 								<div className="w-16 h-16 bg-primary rounded-full flex justify-center items-center mx-auto
@@ -107,7 +113,12 @@ const Ubications = () => {
     				</div>
 					</div>
 					<div className="mb-12">
-						<h2 className="font-rochester text-black text-center text-2xl mb-8 text-text md:text-[2.5rem]">Salón</h2>
+						<div className="mb-8">
+							<h2 className="font-rochester text-black text-center text-[1.7rem] text-text md:text-[2.5rem]">Salón</h2>
+							<div className="w-full h-[3rem]">
+								<img className="w-full h-full object-contain" src={flowers} alt="" />
+							</div>
+						</div>
 						<div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:p-8">
 							<div className="lg:col-span-1">
 								<div className="w-16 h-16 bg-primary rounded-full flex justify-center items-center mx-auto
