@@ -35,7 +35,7 @@ const Home = () => {
           href="https://wa.me/+529981278579?text=Confirmo mi asistencia"
         >
           Confirmar
-          <i class="material-symbols-outlined ml-3 text-sm">arrow_outward</i>
+          <i className="material-symbols-outlined ml-3 text-sm">arrow_outward</i>
         </a>
       </div>
     </main>
