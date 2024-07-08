@@ -58,7 +58,7 @@ const Parents = () => {
 
   return (
     <>
-      <section className="w-full bg-center bg-cover bg-fixed bg-[linear-gradient(rgba(0,106,106,1),rgba(0,106,106,.5),rgba(0,106,106,.5)),url(/images/bg-parents.jpeg)]">
+      <section className="w-full bg-center bg-cover bg-fixed bg-[linear-gradient(rgba(0,106,106,1),rgba(0,106,106,.5),rgba(0,106,106,.5))]">
         <div className="container py-8 md:py-12">
           <div>
             <div className="mb-8">
