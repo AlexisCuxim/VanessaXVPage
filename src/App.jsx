@@ -1,15 +1,15 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Home from './pages/Home';
+import PageVannessa from './pages/Home';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={(<Home />)}>
+        <Route path="/" element={(<>Inicio</>)}>
         </Route>
-        <Route path="/vanessa-sanchez" element={<>Inicio</>}>
+        <Route path="/vanessa-sanchez" element={<PageVannessa/>}>
         </Route>
       </Routes>
     </BrowserRouter>
