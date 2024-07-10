@@ -37,7 +37,7 @@ const Header = () => {
           <span className="block text-[#00BD37]">
             Sánchez Uitz
           </span>
-          <div className="w-full h-[3rem]">
+          <div className="w-full h-[3rem] md:relative md:w-max md:left-8 lg:left-[7rem]">
             <img className="w-full h-full object-contain" src={flowers} alt="" />
           </div>
         </h1>
