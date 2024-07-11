@@ -4,8 +4,8 @@ import menClothing from '/images/caballero-vestimenta.png';
 
 const DressCode = () => {
   return (
-    <section className="w-full bg-center bg-cover bg-[linear-gradient(to_bottom,rgba(0,0,0,.5),rgba(0,0,0,.5),rgba(0,0,0,.5)),url(/images/bg-dress-code.jpg)]">
-      <div className="container pt-6 pb-24">
+    <section className="w-full bg-center bg-cover bg-primary">
+      <div className="container py-6">
         <div className="text-secondary text-center mb-6">
           <h3 className="text-secondary font-rochester text-[1.7rem] md:text-[2.5rem]">Vestimenta</h3>
           <p className="text-secondary font-poppins text-sm md:text-[1rem]">*Omitamos el color verde esmeralda</p>
