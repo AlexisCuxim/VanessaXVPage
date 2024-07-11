@@ -4,6 +4,7 @@ import Counter from "../../components/Counter";
 import Parents from "../../components/Parents";
 import Ubications from "../../components/Ubications";
 import DressCode from "../../components/DressCode";
+import Program from "../../components/Program";
 import "./home.css";
 
 const Home = () => {
@@ -28,6 +29,7 @@ const Home = () => {
       <Parents />
       <Ubications />
       <DressCode />
+      <Program />
       <div className={`container button-confirm ${scrollPosition > 100 && 'btn-confirm'} `}>
         <a 
           className="block w-fullx px-4 py-[.8rem] font-poppins text-md text-center text-white font-normal uppercase bg-primary"
