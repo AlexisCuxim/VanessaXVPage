@@ -1,5 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
 import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import { Fancybox } from '@fancyapps/ui';
+import '@fancyapps/ui/dist/fancybox/fancybox.css';
+
 import photoFamily1 from '/images/photos-of-parents/family-1.jpeg';
 import photoFamily2 from '/images/photos-of-parents/family-2.jpeg';
 import photoFamily3 from '/images/photos-of-parents/family-3.jpeg';
@@ -9,16 +15,20 @@ import photoFamily6 from '/images/photos-of-parents/family-6.jpeg';
 import godparents1 from '/images/photos-of-parents/godparents-1.jpeg';
 import godparents2 from '/images/photos-of-parents/godparents-2.jpeg';
 import flowers from '/images/flowers.png';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 
 const Parents = () => {
   const photosFathers = [photoFamily4, photoFamily5, photoFamily6, photoFamily1, photoFamily2, photoFamily3];
   const photosGodparents = [godparents1, godparents2];
+
+  useEffect(() => {
+    Fancybox.bind("[data-fancybox='gallery-a']", {});
+    Fancybox.bind("[data-fancybox='gallery-b']", {});
+  }, []);
+
   // blanchedalmond revisar mejor este color
   const settingsFathers = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -51,7 +61,7 @@ const Parents = () => {
   const settingsGodparents = {
     dots: true,
     fade: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -88,7 +98,7 @@ const Parents = () => {
             <div className="slider-container">
               <Slider {...settingsFathers}>
                 { photosFathers.map((item, index) => (
-                  <div key={index}>
+                  <div key={index} data-fancybox="gallery-a" data-src={item}>
                     <div className="w-full h-[15rem] md:h-[25rem] lg:h-[20rem] px-2">
                       <img className="w-full h-full object-cover rounded-[1rem]" src={item} alt="" />
                     </div>
@@ -125,7 +135,7 @@ const Parents = () => {
             <div className="slider-container">
               <Slider {...settingsGodparents}>
                 { photosGodparents.map((godparent, indexGodparent) => (
-                  <div key={indexGodparent}>
+                  <div key={indexGodparent} data-fancybox="gallery-b" data-src={godparent}>
                     <div className="w-full h-[15rem] md:h-[25rem] lg:h-[20rem] px-2">
                       <img className="w-full h-full object-cover rounded-[1rem]" src={godparent} alt="" />
                     </div>
