@@ -22,7 +22,7 @@ const Program = () => {
               <p className="text-[1.2rem] uppercase font-bold tracking-[.2rem] [text-shadow:_1px_1px_1px_rgb(0_0_0_/_20%)] text-secondary mb-4 md:text-[1.5rem]">Ceremonia</p>
             </div>
             <div className="font-poppins text-center md:text-[1rem]">
-              <p classname="[text-shadow:_1px_1px_1px_rgb(0_0_0_/_20%)]">Hoy celebramos la maravillosa persona en la que te has convertido.</p>
+              <p className="[text-shadow:_1px_1px_1px_rgb(0_0_0_/_20%)]">Hoy celebramos la maravillosa persona en la que te has convertido.</p>
             </div>
           </div>
           <div className="col-span-12 p-4 bg-primary text-white rounded-md md:col-span-6 lg:col-span-4">
@@ -34,7 +34,7 @@ const Program = () => {
               <p className="text-[1.2rem] uppercase font-bold tracking-[.2rem] [text-shadow:_1px_1px_1px_rgb(0_0_0_/_20%)] text-secondary mb-4 md:text-[1.5rem]">Baile de XV años</p>
             </div>
             <div className="font-poppins text-center md:text-[1rem]">
-              <p classname="[text-shadow:_1px_1px_1px_rgb(0_0_0_/_20%)]">No te pierdas mi baile XV años.</p>
+              <p className="[text-shadow:_1px_1px_1px_rgb(0_0_0_/_20%)]">No te pierdas mi baile XV años.</p>
             </div>
           </div>
           <div className="col-span-12 p-4 bg-primary text-white rounded-md md:col-span-6 lg:col-span-4">
@@ -46,7 +46,7 @@ const Program = () => {
               <p className="text-[1.2rem] uppercase font-bold tracking-[.2rem] [text-shadow:_1px_1px_1px_rgb(0_0_0_/_20%)] text-secondary mb-4 md:text-[1.5rem]">Cena</p>
             </div>
             <div className="font-poppins text-center md:text-[1rem]">
-              <p classname="[text-shadow:_1px_1px_1px_rgb(0_0_0_/_20%)]">Disfruta de una deliciosa cena.</p>
+              <p className="[text-shadow:_1px_1px_1px_rgb(0_0_0_/_20%)]">Disfruta de una deliciosa cena.</p>
             </div>
           </div>
           <div className="col-span-12 p-4 bg-primary text-white rounded-md md:col-span-6 lg:col-span-4">
@@ -58,7 +58,7 @@ const Program = () => {
               <p className="text-[1.2rem] uppercase font-bold tracking-[.2rem] [text-shadow:_1px_1px_1px_rgb(0_0_0_/_20%)] text-secondary mb-4 md:text-[1.5rem]">Baile moderno</p>
             </div>
             <div className="font-poppins text-center md:text-[1rem]">
-              <p classname="[text-shadow:_1px_1px_1px_rgb(0_0_0_/_20%)]">¡Únete a la Celebración de los XV Años de Vanessa Sanchez!</p>
+              <p className="[text-shadow:_1px_1px_1px_rgb(0_0_0_/_20%)]">¡Únete a la Celebración de los XV Años de Vanessa Sanchez!</p>
             </div>
           </div>
           <div className="col-span-12 p-4 bg-primary text-white rounded-md md:col-span-6 lg:col-span-4">
@@ -70,7 +70,7 @@ const Program = () => {
               <p className="text-[1.2rem] uppercase font-bold tracking-[.2rem] [text-shadow:_1px_1px_1px_rgb(0_0_0_/_20%)] text-secondary mb-4 md:text-[1.5rem]">Baile</p>
             </div>
             <div className="font-poppins text-center md:text-[1rem]">
-              <p classname="[text-shadow:_1px_1px_1px_rgb(0_0_0_/_20%)]">¡Estás cordialmente invitado al Gran Baile de Gala!</p>
+              <p className="[text-shadow:_1px_1px_1px_rgb(0_0_0_/_20%)]">¡Estás cordialmente invitado al Gran Baile de Gala!</p>
             </div>
           </div>
           <div className="col-span-12 p-4 bg-primary text-white rounded-md md:col-span-6 lg:col-span-4">
@@ -82,7 +82,7 @@ const Program = () => {
               <p className="text-[1.2rem] uppercase font-bold tracking-[.2rem] [text-shadow:_1px_1px_1px_rgb(0_0_0_/_20%)] text-secondary mb-4 md:text-[1.5rem]">Remembranzas</p>
             </div>
             <div className="font-poppins text-center md:text-[1rem]">
-              <p classname="[text-shadow:_1px_1px_1px_rgb(0_0_0_/_20%)]">Acompáñanos a un viaje por los recuerdos</p>
+              <p className="[text-shadow:_1px_1px_1px_rgb(0_0_0_/_20%)]">Acompáñanos a un viaje por los recuerdos</p>
             </div>
           </div>
         </div>
