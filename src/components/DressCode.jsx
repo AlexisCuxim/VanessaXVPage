@@ -17,7 +17,7 @@ const DressCode = () => {
                 Hombres
                 <span className="block w-[4rem] h-[.2rem] bg-white mx-auto rounded-lg"></span>
               </p>
-              <p className="text-[.9rem] font-light [text-shadow:_1px_1px_1px_rgb(0_0_0_/_20%)] md:text-[1rem]">Traje</p>
+              <p className="text-[.9rem] font-light [text-shadow:_1px_1px_1px_rgb(0_0_0_/_20%)] md:text-[1rem]">Formal</p>
             </div>
             <div className="bg-secondary my-6 rounded-lg overflow-hidden relative -top-[4rem] w-[80%] left-1/2 -translate-x-1/2" style={{ boxShadow: 'rgba(0, 0, 0, 0.3) 0px 6px 6px 0px' }}>
               <img className="w-full h-[15rem] object-contain p-8" src={menClothing} alt="" />
