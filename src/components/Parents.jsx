@@ -5,14 +5,16 @@ import photoFamily2 from '/images/photos-of-parents/family-2.jpeg';
 import photoFamily3 from '/images/photos-of-parents/family-3.jpeg';
 import photoFamily4 from '/images/photos-of-parents/family-4.jpeg';
 import photoFamily5 from '/images/photos-of-parents/family-5.jpeg';
+import photoFamily6 from '/images/photos-of-parents/family-6.jpeg';
 import godparents1 from '/images/photos-of-parents/godparents-1.jpeg';
+import godparents2 from '/images/photos-of-parents/godparents-2.jpeg';
 import flowers from '/images/flowers.png';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 const Parents = () => {
-  const photosFathers = [photoFamily1, photoFamily2, photoFamily3, photoFamily4, photoFamily5];
-  const photosGodparents = [godparents1];
+  const photosFathers = [photoFamily4, photoFamily5, photoFamily6, photoFamily1, photoFamily2, photoFamily3];
+  const photosGodparents = [godparents1, godparents2];
   // blanchedalmond revisar mejor este color
   const settingsFathers = {
     dots: true,
@@ -58,7 +60,7 @@ const Parents = () => {
 
   return (
     <>
-      <section className="w-full bg-center bg-cover bg-fixed bg-[linear-gradient(rgba(0,106,106,1),rgba(0,106,106,.5),rgba(0,106,106,.5))]">
+      <section className="w-full bg-center bg-cover bg-fixed bg-[linear-gradient(rgba(0,106,106,1),rgba(0,106,106,.8),rgba(0,106,106,.5))]">
         <div className="container py-8 md:py-12">
           <div>
             <div className="mb-8">
