@@ -104,11 +104,6 @@ const Ubications = () => {
     				      	<img className="w-full h-full object-cover rounded-[1rem]" src={imageChurch} alt="" />
                   </div>
     				    </div>
-    				    <div>
-									<div className="w-full h-[15rem] md:h-[25rem] lg:h-[35rem] px-2">
-    				      	<img className="w-full h-full object-cover rounded-[1rem]" src={imageChurch} alt="" />
-                  </div>
-    				    </div>
     				  </Slider>
     				</div>
 					</div>
