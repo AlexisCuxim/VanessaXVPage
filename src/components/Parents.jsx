@@ -6,19 +6,19 @@ import 'slick-carousel/slick/slick-theme.css';
 import { Fancybox } from '@fancyapps/ui';
 import '@fancyapps/ui/dist/fancybox/fancybox.css';
 
-import photoFamily1 from '/images/photos-of-parents/family-1.jpeg';
-import photoFamily2 from '/images/photos-of-parents/family-2.jpeg';
-import photoFamily3 from '/images/photos-of-parents/family-3.jpeg';
-import photoFamily4 from '/images/photos-of-parents/family-4.jpeg';
-import photoFamily5 from '/images/photos-of-parents/family-5.jpeg';
-import photoFamily6 from '/images/photos-of-parents/family-6.jpeg';
-import godparents1 from '/images/photos-of-parents/godparents-1.jpeg';
-import godparents2 from '/images/photos-of-parents/godparents-2.jpeg';
+import imageFamily1 from '/images/photos-of-parents/image-family-1.jpeg';
+import imageFamily2 from '/images/photos-of-parents/image-family-2.jpeg';
+import imageFamily3 from '/images/photos-of-parents/image-family-3.jpeg';
+import imageFamily4 from '/images/photos-of-parents/image-family-4.jpeg';
+import imageFamily5 from '/images/photos-of-parents/image-family-5.jpeg';
+import imageFamily6 from '/images/photos-of-parents/image-family-6.jpeg';
+import imageGodparents1 from '/images/photos-of-parents/image-godparents-1.jpeg';
+import imageGodparents2 from '/images/photos-of-parents/image-godparents-2.jpeg';
 import flowers from '/images/flowers.png';
 
 const Parents = () => {
-  const photosFathers = [photoFamily4, photoFamily5, photoFamily6, photoFamily1, photoFamily2, photoFamily3];
-  const photosGodparents = [godparents1, godparents2];
+  const photosFathers = [imageFamily4, imageFamily5, imageFamily6, imageFamily1, imageFamily2, imageFamily3];
+  const photosGodparents = [imageGodparents1, imageGodparents2];
 
   useEffect(() => {
     Fancybox.bind("[data-fancybox='gallery-a']", {});
